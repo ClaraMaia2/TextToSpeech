@@ -1,12 +1,15 @@
-<h1>TextToSpeech</h1>
+<body>
+    <h1>TextToSpeech</h1>
 
-<%= form_with url:'#', id:'text-to-speech-form', local:true do |f| %>
-    <div>
-        <%= label_tag :text, 'Enter text:' %>
-        <%= f.text_area :text, id:'text' %>
-    </div>
+    <%= form_with url:'#', class:'formulario', id:'text-to-speech-form', local:true do |f| %>
+        <div class="caixa-texto">
+            <%= f.text_area :text, id:'text', placeholder:'Enter text' %>
+        </div>
 
-    <div>
-        <%= button_tag 'Read Text', type:'button', onclick:'readText()' %>
-    </div>
-<% end %>
+        <br>
+
+        <div class="caixa-botao">
+            <%= button_tag 'Read Text', type:'button', onclick:'readText()', id:'button-read' %>
+        </div>
+    <% end %>
+</body>

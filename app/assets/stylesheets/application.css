@@ -12,4 +12,50 @@
  *
  *= require_tree .
  *= require_self
- */
+ */ 
+body
+{
+   background-color: #ffbfb0;
+}
+ 
+h1
+{
+   color: #c63637;
+   font-size: 50px;
+   font-weight: bolder;
+   text-align: center;
+}
+
+button
+{
+   background-color: #c63637;
+   border: 2;
+   border-color: #c63637;
+   border-radius: 10px;
+   box-shadow: 0 1px 1px rgba(0,0,0,1);
+   color: #ffffff;
+   font-weight: bold;
+   width: 20%;
+   height: 40px;
+   font-size: 20px;
+}
+
+.formulario
+{
+    /* max-width: 650px; */
+    text-align: center;
+}
+
+.formulario input, form textarea
+{
+    border: 5;
+    outline: 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+    width: 20%;
+    box-shadow: 0 1px 1px rgba(0,0,0,1);
+    justify-self: center;
+    margin: auto;
+    resize: none;
+}
